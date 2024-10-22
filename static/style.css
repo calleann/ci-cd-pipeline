@@ -1,0 +1,28 @@
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px 10px;
+  text-align: center;
+}

@@ -2,7 +2,7 @@
 from dataanalysis import df, fig_hist, fig_scatter
 
 # flask server
-from flask import Flask
+from flask import Flask, render_template
 
 # Instantiate a new Flask app
 app = Flask(__name__)
@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_df():
-    return f"<h1> Ma dataset </h1><div>{df.to_html(border=1)}</div>"
+    return render_template("index.html",df_html = df.to_html())
 
 
 @app.route("/scatter")

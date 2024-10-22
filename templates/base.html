@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="/">Page principale</a></li>
+        <li><a href="/scatter">Scatter</a></li>
+        <li><a href="/hist">Hist</a></li>
+      </ul>
+    </nav>
     {% block content %} {% endblock %}
   </body>
 </html>

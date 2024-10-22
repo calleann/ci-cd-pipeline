@@ -5,6 +5,7 @@ body {
 h1 {
   width: 80%;
   margin: auto;
+  margin-top: 10vh;
 }
 
 .container {
@@ -25,4 +26,49 @@ td,
 th {
   padding: 10px 10px;
   text-align: center;
+}
+
+/* General navbar styling */
+nav {
+  background-color: #333;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Remove bullets and margin/padding from list */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style for individual list items */
+nav ul li {
+  margin-right: 20px; /* Add space between links */
+}
+
+/* Link styling */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Responsive - stack links vertically on smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
 }

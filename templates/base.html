@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
   </head>
   <body>
-    <h1>Mon dashboard</h1>
-    <div class="container">{{df_html | safe}}</div>
+    {% block content %} {% endblock %}
   </body>
 </html>
